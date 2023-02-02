@@ -15,5 +15,5 @@ export function decodedResistorValue([first, second, last]: Array<string>): stri
   const value = [first, second].reduce((prev, color) => prev + bandColors.indexOf(color),'');
   const totalZeros = bandColors.indexOf(last);
   
-  return value + ' ' + '0'.repeat(totalZeros) + 'ohms';
+  return value + '0'.repeat(totalZeros) + ' ohms';
 }
