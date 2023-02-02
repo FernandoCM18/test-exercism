@@ -11,14 +11,16 @@ const bandColors = [
   "white"
 ];
 
+const KILO = 1000;
+
 export function decodedResistorValue([first, second, last]: Array<string>): string {
   const value = [first, second].reduce((prev, color) => prev + bandColors.indexOf(color),'');
   const totalZeros = bandColors.indexOf(last);
-  const result = value + '0'.repeat(totalZeros);
+  const result = Number(value + '0'.repeat(totalZeros));
 
-  if(Number(result) >= 1000) {
-    return (Number(result) / 1000) + ' kiloohms';
+  if(result >= KILO) {
+    return (result / KILO) + ' kiloohms';
   }
   
-  return result + ' ohms';
+  return `${result} ohms`;
 }
