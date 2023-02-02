@@ -4,6 +4,7 @@ describe('A leap year', () => {
   it('year not divisible by 4 in common year', () => {
     expect(isLeap(2015)).toBe(false)
   });
+  
   // xit('year divisible by 2, not divisible by 4 in common year', () => {
   //   expect(isLeap(1970)).toBe(false)
   // })

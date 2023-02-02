@@ -1,3 +1,6 @@
 export function isLeap(year: number): boolean {
-  return true;
+  if(year % 4 === 0) {
+    return true
+  }
+  return false;
 }
