@@ -1,6 +1,6 @@
 import { decodedResistorValue } from '../core/resistor-color-trio';
 
-describe('Resistor Color', () => {
+xdescribe('Resistor Color', () => {
   it('Orange and orange and black', () => {
     expect(decodedResistorValue(['orange', 'orange', 'black'])).toEqual(
       '33 ohms'

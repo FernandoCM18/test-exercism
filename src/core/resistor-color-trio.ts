@@ -23,4 +23,4 @@ export function decodedResistorValue([first, second, last]: Array<string>): stri
   }
   
   return `${result} ohms`;
-}
+};
