@@ -1,6 +1,6 @@
 import { decodedResistorValue } from '../core/resistor-color-trio';
 
-xdescribe('Resistor Color', () => {
+describe('Resistor Color', () => {
   it('Orange and orange and black', () => {
     expect(decodedResistorValue(['orange', 'orange', 'black'])).toEqual(
       '33 ohms'
@@ -25,5 +25,13 @@ xdescribe('Resistor Color', () => {
     expect(decodedResistorValue(['yellow', 'violet', 'yellow'])).toEqual(
       '470 kiloohms'
     )
+  });
+
+  it('Blue and violet and blue', () => {
+    expect(decodedResistorValue(['blue', 'violet', 'blue'])).toEqual('67 megaohms')
+  });
+
+  it('Maximum possible value', () => {
+    expect(decodedResistorValue(['white', 'white', 'white'])).toEqual('99 gigaohms')
   });
 })
