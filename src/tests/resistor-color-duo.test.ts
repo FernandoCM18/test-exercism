@@ -1,6 +1,6 @@
 import { decodedValue } from '../core/resistor-color-duo';
 
-xdescribe('Resistor color', () => {
+describe('Resistor color', () => {
   it('brown and black', () => {
     expect(decodedValue(['brown', 'black'])).toEqual(10);
   });
