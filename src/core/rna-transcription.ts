@@ -1,11 +1,4 @@
-
-
-export function toRna(dna: string) {
-  const rna = dna.split('').map((letter) => convert(letter)).join('');
-  return rna;
-}
-
-const convert =  (letter: string) => {
+const convertLetter =  (letter: string) => {
   switch(letter) {
     case 'C' : return 'G';
     case 'G' : return 'C';
@@ -15,3 +8,9 @@ const convert =  (letter: string) => {
 
   throw Error('Invalid input DNA.');
 }
+
+export function toRna(dna: string) {
+  const rna = dna.split('').map((letter) => convertLetter(letter)).join('');
+  return rna;
+}
+
