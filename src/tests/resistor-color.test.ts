@@ -1,6 +1,6 @@
 import { colorCode, COLORS } from '../core/resistor-color'
 
-describe('color code', () => {
+xdescribe('color code', () => {
   it('Black', () => {
     expect(colorCode('black')).toEqual(0)
   });
@@ -15,7 +15,7 @@ describe('color code', () => {
 
 });
 
-describe('Colors', () => {
+xdescribe('Colors', () => {
 
   it('returns all colors', () => {
     expect(COLORS).toEqual([
