@@ -13,7 +13,7 @@ describe('Transcriptor', () => {
   it('transcribes thymine to adenine', () => {
     expect(toRna('T')).toEqual('A')
   })
-  xit('transcribes all dna nucleotides to their rna complements', () => {
+  it('transcribes all dna nucleotides to their rna complements', () => {
     expect(toRna('ACGTGGTCTTAA')).toEqual('UGCACCAGAAUU')
   })
   xit('correctly handles invalid input', () => {
