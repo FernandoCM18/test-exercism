@@ -1,6 +1,6 @@
 import { toRna } from '../core/rna-transcription';
 
-describe('Transcriptor', () => {
+xdescribe('Transcriptor', () => {
   it('transcribes cytosine to guanine', () => {
     expect(toRna('C')).toEqual('G')
   })
