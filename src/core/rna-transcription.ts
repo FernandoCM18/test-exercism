@@ -12,4 +12,6 @@ const convert =  (letter: string) => {
     case 'A' : return 'U';
     case 'T' : return 'A';
   }
+
+  throw Error('Invalid input DNA.');
 }
