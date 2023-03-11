@@ -1,7 +1,15 @@
-export function toRna(nucleotides: string): string {
-  if (nucleotides === 'C') return 'G';
-  if (nucleotides === 'G') return 'C';
-  if (nucleotides === 'A') return 'U';
-  if (nucleotides === 'T') return 'A';
-  return nucleotides;
+
+
+export function toRna(dna: string) {
+  const rna = dna.split('').map((letter) => convert(letter)).join('');
+  return rna;
+}
+
+const convert =  (letter: string) => {
+  switch(letter) {
+    case 'C' : return 'G';
+    case 'G' : return 'C';
+    case 'A' : return 'U';
+    case 'T' : return 'A';
+  }
 }
