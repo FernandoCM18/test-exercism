@@ -10,7 +10,7 @@ describe('Transcriptor', () => {
   it('transcribes adenine to uracil', () => {
     expect(toRna('A')).toEqual('U')
   })
-  xit('transcribes thymine to adenine', () => {
+  it('transcribes thymine to adenine', () => {
     expect(toRna('T')).toEqual('A')
   })
   xit('transcribes all dna nucleotides to their rna complements', () => {
