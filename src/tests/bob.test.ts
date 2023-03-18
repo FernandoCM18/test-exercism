@@ -9,7 +9,7 @@ describe('Bob', () => {
     const result = hey('WATCH OUT!')
     expect(result).toEqual('Whoa, chill out!')
   })
-  xit('shouting gibberish', () => {
+  it('shouting gibberish', () => {
     const result = hey('FCECDFCAAB')
     expect(result).toEqual('Whoa, chill out!')
   })
