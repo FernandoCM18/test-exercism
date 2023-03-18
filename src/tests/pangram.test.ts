@@ -6,7 +6,7 @@ describe('Pangram()', () => {
     expect(isPangram('')).toBe(false)
   });
 
-  xit('perfect lower case', () => {
+  it('perfect lower case', () => {
     expect(isPangram('abcdefghijklmnopqrstuvwxyz')).toBe(true)
   });
 

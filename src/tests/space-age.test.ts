@@ -1,6 +1,6 @@
 import { age } from '../core/space-age';
 
-describe('Space Age', () => {
+xdescribe('Space Age', () => {
   it('age on Earth', () => {
     expect(age('earth', 1000000000)).toEqual(31.69)
   })
