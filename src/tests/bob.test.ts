@@ -17,7 +17,7 @@ describe('Bob', () => {
     const result = hey('Does this cryogenic chamber make me look fat?')
     expect(result).toEqual('Sure.')
   })
-  xit('asking a numeric question', () => {
+  it('asking a numeric question', () => {
     const result = hey('You are, what, like 15?')
     expect(result).toEqual('Sure.')
   })
