@@ -3,5 +3,9 @@ export function hey(message: string): string {
     return 'Whoa, chill out!';
   };
 
+  if (message.endsWith('?')) {
+    return 'Sure.';
+  }
+
   return 'Whatever.';
 }
