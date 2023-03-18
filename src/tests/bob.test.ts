@@ -5,7 +5,7 @@ describe('Bob', () => {
     const result = hey('Tom-ay-to, tom-aaaah-to.')
     expect(result).toEqual('Whatever.')
   })
-  xit('shouting', () => {
+  it('shouting', () => {
     const result = hey('WATCH OUT!')
     expect(result).toEqual('Whoa, chill out!')
   })
