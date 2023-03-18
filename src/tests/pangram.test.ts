@@ -34,7 +34,7 @@ describe('Pangram()', () => {
     )
   });
 
-  xit('missing letters replaced by numbers', () => {
+  it('missing letters replaced by numbers', () => {
     expect(isPangram('7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog')).toBe(false)
   });
 
