@@ -13,7 +13,7 @@ describe('Bob', () => {
     const result = hey('FCECDFCAAB')
     expect(result).toEqual('Whoa, chill out!')
   })
-  xit('asking a question', () => {
+  it('asking a question', () => {
     const result = hey('Does this cryogenic chamber make me look fat?')
     expect(result).toEqual('Sure.')
   })
