@@ -29,7 +29,7 @@ describe('Bob', () => {
     const result = hey("Let's go make out behind the gym!")
     expect(result).toEqual('Whatever.')
   })
-  xit('using acronyms in regular speech', () => {
+  it('using acronyms in regular speech', () => {
     const result = hey("It's OK if you don't want to go to the DMV.")
     expect(result).toEqual('Whatever.')
   })
