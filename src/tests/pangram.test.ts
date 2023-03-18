@@ -42,7 +42,7 @@ describe('Pangram()', () => {
     expect(isPangram('"Five quacking Zephyrs jolt my wax bed."')).toBe(true)
   });
 
-  xit('a-m and A-M are 26 different characters but not a pangram', () => {
+  it('a-m and A-M are 26 different characters but not a pangram', () => {
     expect(isPangram('abcdefghijklm ABCDEFGHIJKLM')).toBe(false)
   });
   
