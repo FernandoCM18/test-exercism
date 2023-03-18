@@ -20,7 +20,7 @@ describe('Pangram()', () => {
     ).toBe(false)
   });
 
-  xit("missing the letter 'h'", () => {
+  it("missing the letter 'h'", () => {
     expect(isPangram('five boxing wizards jump quickly at it')).toBe(false)
   });
 
