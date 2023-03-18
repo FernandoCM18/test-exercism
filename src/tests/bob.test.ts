@@ -45,7 +45,7 @@ describe('Bob', () => {
     const result = hey('1, 2, 3')
     expect(result).toEqual('Whatever.')
   })
-  xit('question with no letters', () => {
+  it('question with no letters', () => {
     const result = hey('4?')
     expect(result).toEqual('Sure.')
   })
