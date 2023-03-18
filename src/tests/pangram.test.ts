@@ -28,7 +28,7 @@ describe('Pangram()', () => {
     expect(isPangram('the_quick_brown_fox_jumps_over_the_lazy_dog')).toBe(true)
   });
 
-  xit('with numbers', () => {
+  it('with numbers', () => {
     expect(isPangram('the 1 quick brown fox jumps over the 2 lazy dogs')).toBe(
       true
     )
