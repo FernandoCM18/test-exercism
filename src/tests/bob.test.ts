@@ -21,7 +21,7 @@ describe('Bob', () => {
     const result = hey('You are, what, like 15?')
     expect(result).toEqual('Sure.')
   })
-  xit('asking gibberish', () => {
+  it('asking gibberish', () => {
     const result = hey('fffbbcbeab?')
     expect(result).toEqual('Sure.')
   })
