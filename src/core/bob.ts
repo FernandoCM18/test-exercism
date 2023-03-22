@@ -1,20 +1,20 @@
-export function hey(message: string): string {  
+export function hey(message: string): string {
+	if (/^[0-9,\s]+$/.exec(message) !== null) {
+		return 'Whatever.';
+	}
 
-  if (message.match(/^[0-9,\s]+$/)) {
-    return 'Whatever.';
-  }
+	if (message.endsWith('?') && message === message.toUpperCase()) {
+		// eslint-disable-next-line quotes
+		return "Calm down, I know what I'm doing!";
+	}
 
-  if (message.endsWith('?') && message === message.toUpperCase()) {
-    return "Calm down, I know what I'm doing!";
-  }
+	if (message === message.toUpperCase()) {
+		return 'Whoa, chill out!';
+	}
 
-  if (message === message.toUpperCase()) {
-    return 'Whoa, chill out!';
-  };
+	if (message.endsWith('?')) {
+		return 'Sure.';
+	}
 
-  if (message.endsWith('?')) {
-    return 'Sure.';
-  }
-
-  return 'Whatever.';
+	return 'Whatever.';
 }
