@@ -58,7 +58,7 @@ describe('count()', () => {
 			expectedCounts
 		);
 	});
-	xit('substrings from the beginning', () => {
+	it('substrings from the beginning', () => {
 		const expectedCounts = new Map(
 			Object.entries({
 				joe: 1,
