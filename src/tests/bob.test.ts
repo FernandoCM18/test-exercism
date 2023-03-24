@@ -67,7 +67,7 @@ describe('Bob', () => {
 		const result = hey('Wait! Hang on.  Are you going to be OK?');
 		expect(result).toEqual('Sure.');
 	});
-	xit('silence', () => {
+	it('silence', () => {
 		const result = hey('');
 		expect(result).toEqual('Fine. Be that way!');
 	});
