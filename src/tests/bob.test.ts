@@ -91,7 +91,7 @@ describe('Bob', () => {
 		const result = hey('Okay if like my  spacebar  quite a bit?   ');
 		expect(result).toEqual('Sure.');
 	});
-	xit('other whitespace', () => {
+	it('other whitespace', () => {
 		const result = hey('\n\r \t');
 		expect(result).toEqual('Fine. Be that way!');
 	});
