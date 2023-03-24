@@ -81,7 +81,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, two: 1, three: 1 }));
 		expect(count(",\n,one,\n ,two \n 'three'")).toEqual(expectedCounts);
 	});
-	xit('quotation for word with apostrophe', () => {
+	it('quotation for word with apostrophe', () => {
 		const expectedCounts = new Map(Object.entries({ can: 1, "can't": 2 }));
 		expect(count("can, can't, 'can't'")).toEqual(expectedCounts);
 	});
