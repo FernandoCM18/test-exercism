@@ -14,6 +14,7 @@ export class DnDCharacter {
 	public intelligence: number;
 	public wisdom: number;
 	public charisma: number;
+	public hitpoints: number;
 
 	constructor() {
 		this.strength = DnDCharacter.generateAbilityScore();
@@ -22,6 +23,7 @@ export class DnDCharacter {
 		this.intelligence = DnDCharacter.generateAbilityScore();
 		this.wisdom = DnDCharacter.generateAbilityScore();
 		this.charisma = DnDCharacter.generateAbilityScore();
+		this.hitpoints = 10 + DnDCharacter.getModifierFor(this.constitution);
 	}
 
 	public static generateAbilityScore(): number {

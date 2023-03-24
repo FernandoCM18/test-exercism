@@ -56,25 +56,25 @@ describe('Ability generator', () => {
 		expect(abilityScore).toBeLessThanOrEqual(18);
 	});
 });
-// xdescribe('Character creation', () => {
-// 	xit('Random character is valid', () => {
-// 		const character = new DnDCharacter();
-// 		expect(character.hitpoints).toEqual(10 + DnDCharacter.getModifierFor(character.constitution));
-// 		expect(character.strength).toBeGreaterThanOrEqual(3);
-// 		expect(character.strength).toBeLessThanOrEqual(18);
-// 		expect(character.dexterity).toBeGreaterThanOrEqual(3);
-// 		expect(character.dexterity).toBeLessThanOrEqual(18);
-// 		expect(character.constitution).toBeGreaterThanOrEqual(3);
-// 		expect(character.constitution).toBeLessThanOrEqual(18);
-// 		expect(character.intelligence).toBeGreaterThanOrEqual(3);
-// 		expect(character.intelligence).toBeLessThanOrEqual(18);
-// 		expect(character.wisdom).toBeGreaterThanOrEqual(3);
-// 		expect(character.wisdom).toBeLessThanOrEqual(18);
-// 		expect(character.charisma).toBeGreaterThanOrEqual(3);
-// 		expect(character.charisma).toBeLessThanOrEqual(18);
-// 	});
-// 	xit('Each ability is only calculated once', () => {
-// 		const character = new DnDCharacter();
-// 		expect(character.strength === character.strength).toBeTruthy();
-// 	});
-// });
+describe('Character creation', () => {
+	it('Random character is valid', () => {
+		const character = new DnDCharacter();
+		expect(character.hitpoints).toEqual(10 + DnDCharacter.getModifierFor(character.constitution));
+		expect(character.strength).toBeGreaterThanOrEqual(3);
+		expect(character.strength).toBeLessThanOrEqual(18);
+		expect(character.dexterity).toBeGreaterThanOrEqual(3);
+		expect(character.dexterity).toBeLessThanOrEqual(18);
+		expect(character.constitution).toBeGreaterThanOrEqual(3);
+		expect(character.constitution).toBeLessThanOrEqual(18);
+		expect(character.intelligence).toBeGreaterThanOrEqual(3);
+		expect(character.intelligence).toBeLessThanOrEqual(18);
+		expect(character.wisdom).toBeGreaterThanOrEqual(3);
+		expect(character.wisdom).toBeLessThanOrEqual(18);
+		expect(character.charisma).toBeGreaterThanOrEqual(3);
+		expect(character.charisma).toBeLessThanOrEqual(18);
+	});
+	xit('Each ability is only calculated once', () => {
+		const character = new DnDCharacter();
+		expect(character.strength === character.strength).toBeTruthy();
+	});
+});
