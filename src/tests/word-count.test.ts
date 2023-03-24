@@ -9,11 +9,11 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, of: 1, each: 1 }));
 		expect(count('one of each')).toEqual(expectedCounts);
 	});
-	xit('counts multiple occurrences', () => {
+	it('counts multiple occurrences', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, fish: 4, two: 1, red: 1, blue: 1 }));
 		expect(count('one fish two fish red fish blue fish')).toEqual(expectedCounts);
 	});
-	xit('handles cramped lists', () => {
+	it('handles cramped lists', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, two: 1, three: 1 }));
 		expect(count('one,two,three')).toEqual(expectedCounts);
 	});
