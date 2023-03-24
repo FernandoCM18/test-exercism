@@ -20,7 +20,7 @@ export function hey(message: string): string {
 		return 'Whoa, chill out!';
 	}
 
-	if (message.endsWith('?')) {
+	if (message.trim().endsWith('?')) {
 		return 'Sure.';
 	}
 
