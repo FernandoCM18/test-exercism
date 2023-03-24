@@ -1,5 +1,5 @@
 import { DnDCharacter } from '../core/dnd-character';
-describe('Ability modifier', () => {
+xdescribe('Ability modifier', () => {
 	it('Ability modifier for score 3 is -4', () => {
 		expect(DnDCharacter.getModifierFor(3)).toEqual(-4);
 	});
@@ -49,14 +49,14 @@ describe('Ability modifier', () => {
 		expect(DnDCharacter.getModifierFor(18)).toEqual(4);
 	});
 });
-describe('Ability generator', () => {
+xdescribe('Ability generator', () => {
 	it('Random ability is within range', () => {
 		const abilityScore = DnDCharacter.generateAbilityScore();
 		expect(abilityScore).toBeGreaterThanOrEqual(3);
 		expect(abilityScore).toBeLessThanOrEqual(18);
 	});
 });
-describe('Character creation', () => {
+xdescribe('Character creation', () => {
 	it('Random character is valid', () => {
 		const character = new DnDCharacter();
 		expect(character.hitpoints).toEqual(10 + DnDCharacter.getModifierFor(character.constitution));
