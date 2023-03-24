@@ -41,7 +41,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ go: 3, stop: 2 }));
 		expect(count('go Go GO Stop stop')).toEqual(expectedCounts);
 	});
-	xit('with apostrophes', () => {
+	it('with apostrophes', () => {
 		const expectedCounts = new Map(
 			Object.entries({
 				first: 1,
