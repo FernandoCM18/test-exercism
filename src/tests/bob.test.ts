@@ -63,7 +63,7 @@ describe('Bob', () => {
 		const result = hey('Ending with ? means a question.');
 		expect(result).toEqual('Whatever.');
 	});
-	xit('prattling on', () => {
+	it('prattling on', () => {
 		const result = hey('Wait! Hang on.  Are you going to be OK?');
 		expect(result).toEqual('Sure.');
 	});
