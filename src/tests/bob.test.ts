@@ -83,7 +83,7 @@ describe('Bob', () => {
 		const result = hey('\nDoes this cryogenic chamber make me look fat?\nNo.');
 		expect(result).toEqual('Whatever.');
 	});
-	xit('starting with whitespace', () => {
+	it('starting with whitespace', () => {
 		const result = hey('         hmmmmmmm...');
 		expect(result).toEqual('Whatever.');
 	});
