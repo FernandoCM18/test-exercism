@@ -37,7 +37,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ testing: 2, 1: 1, 2: 1 }));
 		expect(count('testing, 1, 2 testing')).toEqual(expectedCounts);
 	});
-	xit('normalizes case', () => {
+	it('normalizes case', () => {
 		const expectedCounts = new Map(Object.entries({ go: 3, stop: 2 }));
 		expect(count('go Go GO Stop stop')).toEqual(expectedCounts);
 	});
