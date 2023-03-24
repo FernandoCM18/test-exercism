@@ -77,7 +77,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ multiple: 1, whitespaces: 1 }));
 		expect(count(' multiple   whitespaces')).toEqual(expectedCounts);
 	});
-	xit('alternating word separators not detected as a word', () => {
+	it('alternating word separators not detected as a word', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, two: 1, three: 1 }));
 		expect(count(",\n,one,\n ,two \n 'three'")).toEqual(expectedCounts);
 	});
