@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+
 import { hey } from '../core/bob';
 
 describe('Bob', () => {
@@ -26,16 +28,16 @@ describe('Bob', () => {
 		expect(result).toEqual('Sure.');
 	});
 	it('talking forcefully', () => {
-		const result = hey('Let\'s go make out behind the gym!');
+		const result = hey("Let's go make out behind the gym!");
 		expect(result).toEqual('Whatever.');
 	});
 	it('using acronyms in regular speech', () => {
-		const result = hey('It\'s OK if you don\'t want to go to the DMV.');
+		const result = hey("It's OK if you don't want to go to the DMV.");
 		expect(result).toEqual('Whatever.');
 	});
 	it('forceful question', () => {
 		const result = hey('WHAT THE HELL WERE YOU THINKING?');
-		expect(result).toEqual('Calm down, I know what I\'m doing!');
+		expect(result).toEqual("Calm down, I know what I'm doing!");
 	});
 	it('shouting numbers', () => {
 		const result = hey('1, 2, 3 GO!');
@@ -49,7 +51,7 @@ describe('Bob', () => {
 		const result = hey('4?');
 		expect(result).toEqual('Sure.');
 	});
-	xit('shouting with special characters', () => {
+	it('shouting with special characters', () => {
 		const result = hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!');
 		expect(result).toEqual('Whoa, chill out!');
 	});
