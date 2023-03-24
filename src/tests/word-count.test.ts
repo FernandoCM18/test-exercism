@@ -33,7 +33,7 @@ describe('count()', () => {
 		);
 		expect(count('car: carpet as java: javascript!!&@$%^&"')).toEqual(expectedCounts);
 	});
-	xit('includes numbers', () => {
+	it('includes numbers', () => {
 		const expectedCounts = new Map(Object.entries({ testing: 2, 1: 1, 2: 1 }));
 		expect(count('testing, 1, 2 testing')).toEqual(expectedCounts);
 	});
