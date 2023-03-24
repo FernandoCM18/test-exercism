@@ -59,7 +59,7 @@ describe('Bob', () => {
 		const result = hey('I HATE THE DMV');
 		expect(result).toEqual('Whoa, chill out!');
 	});
-	xit('statement containing question mark', () => {
+	it('statement containing question mark', () => {
 		const result = hey('Ending with ? means a question.');
 		expect(result).toEqual('Whatever.');
 	});
