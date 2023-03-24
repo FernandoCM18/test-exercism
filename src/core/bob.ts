@@ -1,5 +1,5 @@
 export function hey(message: string): string {
-	if (message === '') {
+	if (message.trim() === '') {
 		return 'Fine. Be that way!';
 	}
 
