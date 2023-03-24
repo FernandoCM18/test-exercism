@@ -4,8 +4,11 @@ export function count(phrase: string): Map<string, number> {
 
 	if (words) {
 		words.forEach((word) => {
-			const count = wordCount.get(word) || 0;
-			wordCount.set(word, count + 1);
+			const wordWhithoutSpecialCharacters = word.replace(/[^\w\s]/gi, '');
+			console.log(wordWhithoutSpecialCharacters);
+
+			const count = wordCount.get(wordWhithoutSpecialCharacters) || 0;
+			wordCount.set(wordWhithoutSpecialCharacters, count + 1);
 		});
 	}
 
