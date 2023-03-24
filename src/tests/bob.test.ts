@@ -95,7 +95,7 @@ describe('Bob', () => {
 		const result = hey('\n\r \t');
 		expect(result).toEqual('Fine. Be that way!');
 	});
-	xit('non-question ending with whitespace', () => {
+	it('non-question ending with whitespace', () => {
 		const result = hey('This is a statement ending with whitespace      ');
 		expect(result).toEqual('Whatever.');
 	});
