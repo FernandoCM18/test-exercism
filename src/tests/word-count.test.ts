@@ -21,7 +21,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, two: 1, three: 1 }));
 		expect(count('one,\ntwo,\nthree')).toEqual(expectedCounts);
 	});
-	xit('ignores punctuation', () => {
+	it('ignores punctuation', () => {
 		const expectedCounts = new Map(
 			Object.entries({
 				car: 1,
