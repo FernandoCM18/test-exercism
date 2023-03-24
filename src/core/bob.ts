@@ -3,6 +3,10 @@ export function hey(message: string): string {
 		return 'Whatever.';
 	}
 
+	if (message.match(/\d/) && message.endsWith('?')) {
+		return 'Sure.';
+	}
+
 	if (message.endsWith('?') && message === message.toUpperCase()) {
 		// eslint-disable-next-line quotes
 		return "Calm down, I know what I'm doing!";
