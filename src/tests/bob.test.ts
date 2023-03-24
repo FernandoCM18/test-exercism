@@ -75,7 +75,7 @@ describe('Bob', () => {
 		const result = hey('   ');
 		expect(result).toEqual('Fine. Be that way!');
 	});
-	xit('alternate silence', () => {
+	it('alternate silence', () => {
 		const result = hey('\t\t\t\t\t\t\t\t\t\t');
 		expect(result).toEqual('Fine. Be that way!');
 	});
