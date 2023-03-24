@@ -1,4 +1,8 @@
 export function hey(message: string): string {
+	if (message === '') {
+		return 'Fine. Be that way!';
+	}
+
 	if (/^[0-9,\s]+$/.exec(message) !== null) {
 		return 'Whatever.';
 	}
