@@ -1,28 +1,37 @@
+enum ANSWERS {
+	SURE = 'Sure.',
+	WHOA = 'Whoa, chill out!',
+	// eslint-disable-next-line quotes
+	CALM = "Calm down, I know what I'm doing!",
+	FINE = 'Fine. Be that way!',
+	WHATEVER = 'Whatever.',
+}
+
 export function hey(message: string): string {
 	if (message.trim() === '') {
-		return 'Fine. Be that way!';
+		return ANSWERS.FINE;
 	}
 
 	if (/^[0-9,\s]+$/.exec(message) !== null) {
-		return 'Whatever.';
+		return ANSWERS.WHATEVER;
 	}
 
 	if (message.match(/\d/) && message.endsWith('?')) {
-		return 'Sure.';
+		return ANSWERS.SURE;
 	}
 
 	if (message.endsWith('?') && message === message.toUpperCase()) {
 		// eslint-disable-next-line quotes
-		return "Calm down, I know what I'm doing!";
+		return ANSWERS.CALM;
 	}
 
 	if (message === message.toUpperCase()) {
-		return 'Whoa, chill out!';
+		return ANSWERS.WHOA;
 	}
 
 	if (message.trim().endsWith('?')) {
-		return 'Sure.';
+		return ANSWERS.SURE;
 	}
 
-	return 'Whatever.';
+	return ANSWERS.WHATEVER;
 }
