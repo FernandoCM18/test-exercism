@@ -3,7 +3,7 @@ describe('Ability modifier', () => {
 	it('Ability modifier for score 3 is -4', () => {
 		expect(DnDCharacter.getModifierFor(3)).toEqual(-4);
 	});
-	xit('Ability modifier for score 4 is -3', () => {
+	it('Ability modifier for score 4 is -3', () => {
 		expect(DnDCharacter.getModifierFor(4)).toEqual(-3);
 	});
 	xit('Ability modifier for score 5 is -3', () => {
