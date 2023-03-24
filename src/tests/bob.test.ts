@@ -55,7 +55,7 @@ describe('Bob', () => {
 		const result = hey('ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!');
 		expect(result).toEqual('Whoa, chill out!');
 	});
-	xit('shouting with no exclamation mark', () => {
+	it('shouting with no exclamation mark', () => {
 		const result = hey('I HATE THE DMV');
 		expect(result).toEqual('Whoa, chill out!');
 	});
