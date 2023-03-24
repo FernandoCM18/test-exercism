@@ -1,12 +1,3 @@
-export interface DnDCharacterAbilityScores {
-	strength: number;
-	dexterity: number;
-	constitution: number;
-	intelligence: number;
-	wisdom: number;
-	charisma: number;
-}
-
 export class DnDCharacter {
 	public strength: number;
 	public dexterity: number;
