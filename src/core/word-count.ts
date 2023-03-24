@@ -1,5 +1,5 @@
 export function count(phrase: string): Map<string, number> {
-	const words = phrase.toLowerCase().split(' ');
+	const words = phrase.toLowerCase().split(/[\s,]+/);
 	const wordCount = new Map<string, number>();
 
 	if (words) {
