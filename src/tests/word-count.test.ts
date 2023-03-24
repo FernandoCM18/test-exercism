@@ -85,7 +85,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ can: 1, "can't": 2 }));
 		expect(count("can, can't, 'can't'")).toEqual(expectedCounts);
 	});
-	xit('handles properties that exist on Object’s prototype', () => {
+	it('handles properties that exist on Object’s prototype', () => {
 		const expectedCounts = new Map(
 			Object.entries({
 				reserved: 1,
