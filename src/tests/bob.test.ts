@@ -71,7 +71,7 @@ describe('Bob', () => {
 		const result = hey('');
 		expect(result).toEqual('Fine. Be that way!');
 	});
-	xit('prolonged silence', () => {
+	it('prolonged silence', () => {
 		const result = hey('   ');
 		expect(result).toEqual('Fine. Be that way!');
 	});
