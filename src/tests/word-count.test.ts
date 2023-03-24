@@ -17,7 +17,7 @@ describe('count()', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, two: 1, three: 1 }));
 		expect(count('one,two,three')).toEqual(expectedCounts);
 	});
-	xit('handles expanded lists', () => {
+	it('handles expanded lists', () => {
 		const expectedCounts = new Map(Object.entries({ one: 1, two: 1, three: 1 }));
 		expect(count('one,\ntwo,\nthree')).toEqual(expectedCounts);
 	});
