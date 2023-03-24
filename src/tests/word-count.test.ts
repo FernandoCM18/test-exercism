@@ -73,7 +73,7 @@ describe('count()', () => {
 		);
 		expect(count("Joe can't tell between app, apple and a.")).toEqual(expectedCounts);
 	});
-	xit('multiple spaces not detected as a word', () => {
+	it('multiple spaces not detected as a word', () => {
 		const expectedCounts = new Map(Object.entries({ multiple: 1, whitespaces: 1 }));
 		expect(count(' multiple   whitespaces')).toEqual(expectedCounts);
 	});
