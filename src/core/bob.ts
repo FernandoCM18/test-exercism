@@ -8,30 +8,17 @@ enum ANSWERS {
 }
 
 export function hey(message: string): string {
-	if (message.trim() === '') {
-		return ANSWERS.FINE;
-	}
+	const isSilence = message.trim() === '';
+	const isNumeric = /^[0-9,\s]+$/.test(message);
+	const isQuestion = message.trim().endsWith('?');
+	const isShouting = message === message.toUpperCase() && /[A-Za-z]/.test(message);
+	const isShoutingQuestion = isShouting && isQuestion;
 
-	if (/^[0-9,\s]+$/.exec(message) !== null) {
-		return ANSWERS.WHATEVER;
-	}
-
-	if (message.match(/\d/) && message.endsWith('?')) {
-		return ANSWERS.SURE;
-	}
-
-	if (message.endsWith('?') && message === message.toUpperCase()) {
-		// eslint-disable-next-line quotes
-		return ANSWERS.CALM;
-	}
-
-	if (message === message.toUpperCase()) {
-		return ANSWERS.WHOA;
-	}
-
-	if (message.trim().endsWith('?')) {
-		return ANSWERS.SURE;
-	}
+	if (isSilence) return ANSWERS.FINE;
+	if (isNumeric) return ANSWERS.WHATEVER;
+	if (isShoutingQuestion) return ANSWERS.CALM;
+	if (isQuestion) return ANSWERS.SURE;
+	if (isShouting) return ANSWERS.WHOA;
 
 	return ANSWERS.WHATEVER;
 }
