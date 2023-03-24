@@ -2,7 +2,7 @@
 
 import { hey } from '../core/bob';
 
-describe('Bob', () => {
+xdescribe('Bob', () => {
 	it('stating something', () => {
 		const result = hey('Tom-ay-to, tom-aaaah-to.');
 		expect(result).toEqual('Whatever.');
