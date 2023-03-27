@@ -13,7 +13,7 @@ describe('Reverse String', () => {
 		const expected = 'nemaR';
 		expect(reverse('Ramen')).toEqual(expected);
 	});
-	xit('a sentence with punctuation', () => {
+	it('a sentence with punctuation', () => {
 		const expected = `!yrgnuh m'I`;
 		expect(reverse(`I'm hungry!`)).toEqual(expected);
 	});
