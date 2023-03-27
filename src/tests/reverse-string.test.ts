@@ -17,7 +17,7 @@ describe('Reverse String', () => {
 		const expected = `!yrgnuh m'I`;
 		expect(reverse(`I'm hungry!`)).toEqual(expected);
 	});
-	xit('a palindrome', () => {
+	it('a palindrome', () => {
 		const expected = 'racecar';
 		expect(reverse('racecar')).toEqual(expected);
 	});
