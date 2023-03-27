@@ -32,7 +32,7 @@ describe('Squares', () => {
 		it('gets the sum of squares', () => {
 			expect(squares.sumOfSquares).toBe(338350);
 		});
-		xit('gets the difference', () => {
+		it('gets the difference', () => {
 			expect(squares.difference).toBe(25164150);
 		});
 	});
