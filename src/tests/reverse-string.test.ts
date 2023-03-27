@@ -9,7 +9,7 @@ describe('Reverse String', () => {
 		const expected = 'tobor';
 		expect(reverse('robot')).toEqual(expected);
 	});
-	xit('a capitalized word', () => {
+	it('a capitalized word', () => {
 		const expected = 'nemaR';
 		expect(reverse('Ramen')).toEqual(expected);
 	});
