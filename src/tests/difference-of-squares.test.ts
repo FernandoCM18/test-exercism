@@ -20,13 +20,13 @@ describe('Squares', () => {
 		it('gets the sum of squares', () => {
 			expect(squares.sumOfSquares).toBe(385);
 		});
-		xit('gets the difference', () => {
+		it('gets the difference', () => {
 			expect(squares.difference).toBe(2640);
 		});
 	});
 	describe('up to 100', () => {
 		const squares = new Squares(100);
-		xit('gets the square of sum', () => {
+		it('gets the square of sum', () => {
 			expect(squares.squareOfSum).toBe(25502500);
 		});
 		xit('gets the sum of squares', () => {
