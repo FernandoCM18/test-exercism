@@ -8,7 +8,7 @@ describe('Squares', () => {
 		it('gets the sum of squares', () => {
 			expect(squares.sumOfSquares).toBe(55);
 		});
-		xit('gets the difference', () => {
+		it('gets the difference', () => {
 			expect(squares.difference).toBe(170);
 		});
 	});
