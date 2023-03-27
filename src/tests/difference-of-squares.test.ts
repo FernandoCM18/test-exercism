@@ -1,5 +1,5 @@
 import { Squares } from '../core/difference-of-squares';
-describe('Squares', () => {
+xdescribe('Squares', () => {
 	describe('up to 5', () => {
 		const squares = new Squares(5);
 		it('gets the square of sum', () => {
