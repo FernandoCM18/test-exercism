@@ -1,10 +1,11 @@
+/* eslint-disable quotes */
 import { reverse } from '../core/reverse-string';
 describe('Reverse String', () => {
 	it('an empty string', () => {
 		const expected = '';
 		expect(reverse('')).toEqual(expected);
 	});
-	xit('a word', () => {
+	it('a word', () => {
 		const expected = 'tobor';
 		expect(reverse('robot')).toEqual(expected);
 	});
@@ -13,8 +14,8 @@ describe('Reverse String', () => {
 		expect(reverse('Ramen')).toEqual(expected);
 	});
 	xit('a sentence with punctuation', () => {
-		const expected = '!yrgnuh m\'I';
-		expect(reverse('I\'m hungry!')).toEqual(expected);
+		const expected = `!yrgnuh m'I`;
+		expect(reverse(`I'm hungry!`)).toEqual(expected);
 	});
 	xit('a palindrome', () => {
 		const expected = 'racecar';
