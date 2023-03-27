@@ -29,7 +29,7 @@ describe('Squares', () => {
 		it('gets the square of sum', () => {
 			expect(squares.squareOfSum).toBe(25502500);
 		});
-		xit('gets the sum of squares', () => {
+		it('gets the sum of squares', () => {
 			expect(squares.sumOfSquares).toBe(338350);
 		});
 		xit('gets the difference', () => {
