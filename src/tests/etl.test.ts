@@ -10,7 +10,7 @@ describe('Transform', () => {
 		const expected = { a: 1, e: 1, i: 1, o: 1, u: 1 };
 		expect(transform(old)).toEqual(expected);
 	});
-	xit('transforms more keys', () => {
+	it('transforms more keys', () => {
 		const old = { 1: ['A', 'E'], 2: ['D', 'G'] };
 		const expected = { a: 1, e: 1, d: 2, g: 2 };
 		expect(transform(old)).toEqual(expected);
