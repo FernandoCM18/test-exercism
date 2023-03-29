@@ -17,7 +17,9 @@ export class Triangle {
 	}
 
 	get isIsosceles() {
-		throw new Error('Remove this statement and implement this function');
+		return (this.isTriangle() && this.a === this.b) || this.a === this.c || this.b === this.c
+			? true
+			: false;
 	}
 
 	get isScalene() {

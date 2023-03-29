@@ -23,7 +23,7 @@ describe('Triangle', () => {
 		});
 	});
 	describe('isosceles triangle', () => {
-		xit('last two sides are equal', () => {
+		it('last two sides are equal', () => {
 			const triangle = new Triangle(3, 4, 4);
 			expect(triangle.isIsosceles).toBe(true);
 		});
