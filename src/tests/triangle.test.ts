@@ -51,7 +51,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(1, 3, 1);
 			expect(triangle.isIsosceles).toBe(false);
 		});
-		xit('third triangle inequality violation', () => {
+		it('third triangle inequality violation', () => {
 			const triangle = new Triangle(3, 1, 1);
 			expect(triangle.isIsosceles).toBe(false);
 		});
