@@ -13,7 +13,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(5, 4, 6);
 			expect(triangle.isEquilateral).toBe(false);
 		});
-		xit('all zero sides is not a triangle', () => {
+		it('all zero sides is not a triangle', () => {
 			const triangle = new Triangle(0, 0, 0);
 			expect(triangle.isEquilateral).toBe(false);
 		});
