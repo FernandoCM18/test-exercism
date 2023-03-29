@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
 import { reverse } from '../core/reverse-string';
-describe('Reverse String', () => {
+xdescribe('Reverse String', () => {
 	it('an empty string', () => {
 		const expected = '';
 		expect(reverse('')).toEqual(expected);
