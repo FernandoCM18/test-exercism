@@ -85,7 +85,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(7, 3, 2);
 			expect(triangle.isScalene).toBe(false);
 		});
-		xit('sides may be floats', () => {
+		it('sides may be floats', () => {
 			const triangle = new Triangle(0.5, 0.4, 0.6);
 			expect(triangle.isScalene).toBe(true);
 		});
