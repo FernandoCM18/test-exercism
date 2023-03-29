@@ -27,7 +27,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(3, 4, 4);
 			expect(triangle.isIsosceles).toBe(true);
 		});
-		xit('first two sides are equal', () => {
+		it('first two sides are equal', () => {
 			const triangle = new Triangle(4, 4, 3);
 			expect(triangle.isIsosceles).toBe(true);
 		});
