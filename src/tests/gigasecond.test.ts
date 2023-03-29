@@ -25,7 +25,7 @@ describe('Gigasecond', () => {
 		const expectedDate = new Date(Date.parse('2046-10-03T01:46:39Z'));
 		expect(gs.date()).toEqual(expectedDate);
 	});
-	xit('does not mutate the input', () => {
+	it('does not mutate the input', () => {
 		const gs = new Gigasecond(new Date(Date.parse('2015-01-24T23:59:59Z')));
 		const expectedDate = new Date(Date.parse('2046-10-03T01:46:39Z'));
 		gs.date();
