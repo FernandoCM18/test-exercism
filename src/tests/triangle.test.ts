@@ -31,7 +31,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(4, 4, 3);
 			expect(triangle.isIsosceles).toBe(true);
 		});
-		xit('first and last sides are equal', () => {
+		it('first and last sides are equal', () => {
 			const triangle = new Triangle(4, 3, 4);
 			expect(triangle.isIsosceles).toBe(true);
 		});
