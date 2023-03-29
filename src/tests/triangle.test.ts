@@ -5,7 +5,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(2, 2, 2);
 			expect(triangle.isEquilateral).toBe(true);
 		});
-		xit('any side is unequal', () => {
+		it('any side is unequal', () => {
 			const triangle = new Triangle(2, 3, 2);
 			expect(triangle.isEquilateral).toBe(false);
 		});
