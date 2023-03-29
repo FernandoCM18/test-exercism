@@ -9,7 +9,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(2, 3, 2);
 			expect(triangle.isEquilateral).toBe(false);
 		});
-		xit('no sides are equal', () => {
+		it('no sides are equal', () => {
 			const triangle = new Triangle(5, 4, 6);
 			expect(triangle.isEquilateral).toBe(false);
 		});
