@@ -39,7 +39,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(4, 4, 4);
 			expect(triangle.isIsosceles).toBe(true);
 		});
-		xit('no sides are equal', () => {
+		it('no sides are equal', () => {
 			const triangle = new Triangle(2, 3, 4);
 			expect(triangle.isIsosceles).toBe(false);
 		});
