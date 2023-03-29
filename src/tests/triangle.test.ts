@@ -47,7 +47,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(1, 1, 3);
 			expect(triangle.isIsosceles).toBe(false);
 		});
-		xit('second triangle inequality violation', () => {
+		it('second triangle inequality violation', () => {
 			const triangle = new Triangle(1, 3, 1);
 			expect(triangle.isIsosceles).toBe(false);
 		});
