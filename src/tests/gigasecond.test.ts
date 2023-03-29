@@ -5,7 +5,7 @@ describe('Gigasecond', () => {
 		const expectedDate = new Date(Date.parse('2043-01-01T01:46:40Z'));
 		expect(gs.date()).toEqual(expectedDate);
 	});
-	xit('second test for date only specification of time', () => {
+	it('second test for date only specification of time', () => {
 		const gs = new Gigasecond(new Date(Date.parse('1977-06-13')));
 		const expectedDate = new Date(Date.parse('2009-02-19T01:46:40Z'));
 		expect(gs.date()).toEqual(expectedDate);
