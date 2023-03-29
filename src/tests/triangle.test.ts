@@ -17,7 +17,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(0, 0, 0);
 			expect(triangle.isEquilateral).toBe(false);
 		});
-		xit('sides may be floats', () => {
+		it('sides may be floats', () => {
 			const triangle = new Triangle(0.5, 0.5, 0.5);
 			expect(triangle.isEquilateral).toBe(true);
 		});
