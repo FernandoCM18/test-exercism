@@ -25,9 +25,7 @@ export class Triangle {
 	}
 
 	get isScalene() {
-		return (this.isTriangle() && this.a !== this.b) ||
-			(this.isTriangle() && this.a !== this.c) ||
-			(this.isTriangle() && this.b !== this.c)
+		return this.isTriangle() && this.a !== this.b && this.a !== this.c && this.b !== this.c
 			? true
 			: false;
 	}
