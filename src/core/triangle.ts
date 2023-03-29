@@ -25,6 +25,10 @@ export class Triangle {
 	}
 
 	get isScalene() {
-		throw new Error('Remove this statement and implement this function');
+		return (this.isTriangle() && this.a !== this.b) ||
+			(this.isTriangle() && this.a !== this.c) ||
+			(this.isTriangle() && this.b !== this.c)
+			? true
+			: false;
 	}
 }
