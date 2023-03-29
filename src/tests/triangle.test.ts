@@ -55,7 +55,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(3, 1, 1);
 			expect(triangle.isIsosceles).toBe(false);
 		});
-		xit('sides may be floats', () => {
+		it('sides may be floats', () => {
 			const triangle = new Triangle(0.5, 0.4, 0.5);
 			expect(triangle.isIsosceles).toBe(true);
 		});
