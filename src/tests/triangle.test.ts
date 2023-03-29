@@ -73,7 +73,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(4, 4, 3);
 			expect(triangle.isScalene).toBe(false);
 		});
-		xit('first and third sides are equal', () => {
+		it('first and third sides are equal', () => {
 			const triangle = new Triangle(3, 4, 3);
 			expect(triangle.isScalene).toBe(false);
 		});
