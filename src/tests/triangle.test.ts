@@ -77,7 +77,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(3, 4, 3);
 			expect(triangle.isScalene).toBe(false);
 		});
-		xit('second and third sides are equal', () => {
+		it('second and third sides are equal', () => {
 			const triangle = new Triangle(4, 3, 3);
 			expect(triangle.isScalene).toBe(false);
 		});
