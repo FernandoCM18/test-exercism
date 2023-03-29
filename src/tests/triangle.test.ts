@@ -35,7 +35,7 @@ describe('Triangle', () => {
 			const triangle = new Triangle(4, 3, 4);
 			expect(triangle.isIsosceles).toBe(true);
 		});
-		xit('equilateral triangles are also isosceles', () => {
+		it('equilateral triangles are also isosceles', () => {
 			const triangle = new Triangle(4, 4, 4);
 			expect(triangle.isIsosceles).toBe(true);
 		});
