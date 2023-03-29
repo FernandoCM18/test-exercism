@@ -20,7 +20,7 @@ describe('Gigasecond', () => {
 		const expectedDate = new Date(Date.parse('2046-10-02T23:46:40Z'));
 		expect(gs.date()).toEqual(expectedDate);
 	});
-	xit('full time with day roll-over', () => {
+	it('full time with day roll-over', () => {
 		const gs = new Gigasecond(new Date(Date.parse('2015-01-24T23:59:59Z')));
 		const expectedDate = new Date(Date.parse('2046-10-03T01:46:39Z'));
 		expect(gs.date()).toEqual(expectedDate);
