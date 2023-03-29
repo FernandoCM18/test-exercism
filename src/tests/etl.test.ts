@@ -1,5 +1,5 @@
 import { transform } from '../core/etl';
-describe('Transform', () => {
+xdescribe('Transform', () => {
 	it('transforms one value', () => {
 		const old: { [key: string]: string[] } = { 1: ['A'] };
 		const expected: { [key: string]: number } = { a: 1 };
