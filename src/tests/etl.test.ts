@@ -15,7 +15,7 @@ describe('Transform', () => {
 		const expected = { a: 1, e: 1, d: 2, g: 2 };
 		expect(transform(old)).toEqual(expected);
 	});
-	xit('transforms a full dataset', () => {
+	it('transforms a full dataset', () => {
 		const old = {
 			1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
 			2: ['D', 'G'],
