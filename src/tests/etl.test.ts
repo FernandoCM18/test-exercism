@@ -5,7 +5,7 @@ describe('Transform', () => {
 		const expected: { [key: string]: number } = { a: 1 };
 		expect(transform(old)).toEqual(expected);
 	});
-	xit('transforms more values', () => {
+	it('transforms more values', () => {
 		const old = { 1: ['A', 'E', 'I', 'O', 'U'] };
 		const expected = { a: 1, e: 1, i: 1, o: 1, u: 1 };
 		expect(transform(old)).toEqual(expected);
