@@ -2,9 +2,7 @@ export class Triangle {
 	constructor(public a: number, public b: number, public c: number) {}
 
 	get isEquilateral() {
-		if (this.a === this.b && this.b === this.c) {
-			return true;
-		}
+		return this.a === this.b && this.b === this.c ? true : false;
 	}
 
 	get isIsosceles() {
