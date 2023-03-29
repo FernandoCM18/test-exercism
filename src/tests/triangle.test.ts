@@ -61,7 +61,7 @@ describe('Triangle', () => {
 		});
 	});
 	describe('scalene triangle', () => {
-		xit('no sides are equal', () => {
+		it('no sides are equal', () => {
 			const triangle = new Triangle(5, 4, 6);
 			expect(triangle.isScalene).toBe(true);
 		});
