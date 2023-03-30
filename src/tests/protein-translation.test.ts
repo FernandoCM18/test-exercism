@@ -77,7 +77,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Leucine', 'Leucine'];
 		expect(translate('UUAUUG')).toEqual(expected);
 	});
-	xit('Translate RNA strand into correct protein list', () => {
+	it('Translate RNA strand into correct protein list', () => {
 		const expected = ['Methionine', 'Phenylalanine', 'Tryptophan'];
 		expect(translate('AUGUUUUGG')).toEqual(expected);
 	});
