@@ -111,7 +111,7 @@ describe('Translate input RNA sequences into proteins', () => {
 			translate('XYZ');
 		}).toThrowError('Invalid codon');
 	});
-	xit("Incomplete RNA sequence can't translate", () => {
+	it("Incomplete RNA sequence can't translate", () => {
 		expect(() => {
 			translate('AUGU');
 		}).toThrowError('Invalid codon');
