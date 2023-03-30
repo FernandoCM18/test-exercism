@@ -61,7 +61,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected: string[] = [];
 		expect(translate('UAA')).toEqual(expected);
 	});
-	xit('STOP codon RNA sequence 2', () => {
+	it('STOP codon RNA sequence 2', () => {
 		const expected: string[] = [];
 		expect(translate('UAG')).toEqual(expected);
 	});
