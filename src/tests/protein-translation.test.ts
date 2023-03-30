@@ -116,7 +116,7 @@ describe('Translate input RNA sequences into proteins', () => {
 			translate('AUGU');
 		}).toThrowError('Invalid codon');
 	});
-	xit('Incomplete RNA sequence can translate if valid until a STOP codon', () => {
+	it('Incomplete RNA sequence can translate if valid until a STOP codon', () => {
 		const expected = ['Phenylalanine', 'Phenylalanine'];
 		expect(translate('UUCUUCUAAUGGU')).toEqual(expected);
 	});
