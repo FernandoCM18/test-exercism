@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import { translate } from '../core/protein-translation';
 describe('Translate input RNA sequences into proteins', () => {
 	it('Methionine RNA sequence', () => {
@@ -8,7 +9,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Phenylalanine'];
 		expect(translate('UUU')).toEqual(expected);
 	});
-	xit('Phenylalanine RNA sequence 2', () => {
+	it('Phenylalanine RNA sequence 2', () => {
 		const expected = ['Phenylalanine'];
 		expect(translate('UUC')).toEqual(expected);
 	});
@@ -100,17 +101,17 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Tryptophan', 'Cysteine', 'Tyrosine'];
 		expect(translate('UGGUGUUAUUAAUGGUUU')).toEqual(expected);
 	});
-	xit('Non-existing codon can\'t translate', () => {
+	xit("Non-existing codon can't translate", () => {
 		expect(() => {
 			translate('AAA');
 		}).toThrowError('Invalid codon');
 	});
-	xit('Unknown amino acids, not part of a codon, can\'t translate', () => {
+	xit("Unknown amino acids, not part of a codon, can't translate", () => {
 		expect(() => {
 			translate('XYZ');
 		}).toThrowError('Invalid codon');
 	});
-	xit('Incomplete RNA sequence can\'t translate', () => {
+	xit("Incomplete RNA sequence can't translate", () => {
 		expect(() => {
 			translate('AUGU');
 		}).toThrowError('Invalid codon');
