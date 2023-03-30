@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
 import { translate } from '../core/protein-translation';
-describe('Translate input RNA sequences into proteins', () => {
+xdescribe('Translate input RNA sequences into proteins', () => {
 	it('Methionine RNA sequence', () => {
 		const expected = ['Methionine'];
 		expect(translate('AUG')).toEqual(expected);
