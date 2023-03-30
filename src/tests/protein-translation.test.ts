@@ -69,7 +69,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected: string[] = [];
 		expect(translate('UGA')).toEqual(expected);
 	});
-	xit('Sequence of two protein codons translates into proteins', () => {
+	it('Sequence of two protein codons translates into proteins', () => {
 		const expected = ['Phenylalanine', 'Phenylalanine'];
 		expect(translate('UUUUUU')).toEqual(expected);
 	});
