@@ -3,7 +3,7 @@ describe('Acronym are produced from', () => {
 	it('title cased phrases', () => {
 		expect(parse('Portable Network Graphics')).toEqual('PNG');
 	});
-	xit('other title cased phrases', () => {
+	it('other title cased phrases', () => {
 		expect(parse('Ruby on Rails')).toEqual('ROR');
 	});
 	xit('inconsistently cased phrases', () => {
