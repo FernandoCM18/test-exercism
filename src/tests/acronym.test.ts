@@ -12,7 +12,7 @@ describe('Acronym are produced from', () => {
 	it('phrases with punctuation', () => {
 		expect(parse('First In, First Out')).toEqual('FIFO');
 	});
-	xit('other phrases with punctuation', () => {
+	it('other phrases with punctuation', () => {
 		expect(parse('PHP: Hypertext Preprocessor')).toEqual('PHP');
 	});
 	xit('phrases with punctuation and sentence casing', () => {
