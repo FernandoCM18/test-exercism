@@ -81,7 +81,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Methionine', 'Phenylalanine', 'Tryptophan'];
 		expect(translate('AUGUUUUGG')).toEqual(expected);
 	});
-	xit('Translation stops if STOP codon at beginning of sequence', () => {
+	it('Translation stops if STOP codon at beginning of sequence', () => {
 		const expected: string[] = [];
 		expect(translate('UAGUGG')).toEqual(expected);
 	});
