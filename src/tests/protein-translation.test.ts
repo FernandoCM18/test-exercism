@@ -4,7 +4,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Methionine'];
 		expect(translate('AUG')).toEqual(expected);
 	});
-	xit('Phenylalanine RNA sequence 1', () => {
+	it('Phenylalanine RNA sequence 1', () => {
 		const expected = ['Phenylalanine'];
 		expect(translate('UUU')).toEqual(expected);
 	});
