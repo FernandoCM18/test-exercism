@@ -101,7 +101,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Tryptophan', 'Cysteine', 'Tyrosine'];
 		expect(translate('UGGUGUUAUUAAUGGUUU')).toEqual(expected);
 	});
-	xit("Non-existing codon can't translate", () => {
+	it("Non-existing codon can't translate", () => {
 		expect(() => {
 			translate('AAA');
 		}).toThrowError('Invalid codon');
