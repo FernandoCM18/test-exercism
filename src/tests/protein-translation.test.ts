@@ -33,7 +33,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Serine'];
 		expect(translate('UCA')).toEqual(expected);
 	});
-	xit('Serine RNA sequence 4', () => {
+	it('Serine RNA sequence 4', () => {
 		const expected = ['Serine'];
 		expect(translate('UCG')).toEqual(expected);
 	});
