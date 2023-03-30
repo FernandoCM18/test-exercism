@@ -22,7 +22,7 @@ export function translate(rna: string): string[] {
 	const result: string[] = [];
 
 	for (let i = 0; i < rna.length; i += 3) {
-		const codon = rna.substring(i, 3);
+		const codon = rna.substring(i, i + 3);
 		const protein = CODON_PROTEIN.get(codon);
 		if (protein === undefined) {
 			throw new Error('Invalid codon: ' + codon);
