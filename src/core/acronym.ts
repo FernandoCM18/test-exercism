@@ -6,5 +6,5 @@ export function parse(phrase: string): string {
 		result = result.concat(word[0]);
 	});
 
-	return result;
+	return result.toUpperCase();
 }
