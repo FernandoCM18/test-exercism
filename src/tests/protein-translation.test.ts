@@ -41,7 +41,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Tyrosine'];
 		expect(translate('UAU')).toEqual(expected);
 	});
-	xit('Tyrosine RNA sequence 2', () => {
+	it('Tyrosine RNA sequence 2', () => {
 		const expected = ['Tyrosine'];
 		expect(translate('UAC')).toEqual(expected);
 	});
