@@ -17,7 +17,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Leucine'];
 		expect(translate('UUA')).toEqual(expected);
 	});
-	xit('Leucine RNA sequence 2', () => {
+	it('Leucine RNA sequence 2', () => {
 		const expected = ['Leucine'];
 		expect(translate('UUG')).toEqual(expected);
 	});
