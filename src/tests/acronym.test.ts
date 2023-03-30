@@ -15,7 +15,7 @@ describe('Acronym are produced from', () => {
 	it('other phrases with punctuation', () => {
 		expect(parse('PHP: Hypertext Preprocessor')).toEqual('PHP');
 	});
-	xit('phrases with punctuation and sentence casing', () => {
+	it('phrases with punctuation and sentence casing', () => {
 		expect(parse('Complementary metal-oxide semiconductor')).toEqual('CMOS');
 	});
 });
