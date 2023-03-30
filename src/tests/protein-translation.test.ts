@@ -106,7 +106,7 @@ describe('Translate input RNA sequences into proteins', () => {
 			translate('AAA');
 		}).toThrowError('Invalid codon');
 	});
-	xit("Unknown amino acids, not part of a codon, can't translate", () => {
+	it("Unknown amino acids, not part of a codon, can't translate", () => {
 		expect(() => {
 			translate('XYZ');
 		}).toThrowError('Invalid codon');
