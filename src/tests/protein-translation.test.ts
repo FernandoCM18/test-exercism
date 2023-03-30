@@ -97,7 +97,7 @@ describe('Translate input RNA sequences into proteins', () => {
 		const expected = ['Tryptophan'];
 		expect(translate('UGGUAGUGG')).toEqual(expected);
 	});
-	xit('Translation stops if STOP codon in middle of six-codon sequence', () => {
+	it('Translation stops if STOP codon in middle of six-codon sequence', () => {
 		const expected = ['Tryptophan', 'Cysteine', 'Tyrosine'];
 		expect(translate('UGGUGUUAUUAAUGGUUU')).toEqual(expected);
 	});
