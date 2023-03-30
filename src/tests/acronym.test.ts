@@ -9,7 +9,7 @@ describe('Acronym are produced from', () => {
 	it('inconsistently cased phrases', () => {
 		expect(parse('HyperText Markup Language')).toEqual('HTML');
 	});
-	xit('phrases with punctuation', () => {
+	it('phrases with punctuation', () => {
 		expect(parse('First In, First Out')).toEqual('FIFO');
 	});
 	xit('other phrases with punctuation', () => {
