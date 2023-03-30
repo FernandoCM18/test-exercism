@@ -1,7 +1,7 @@
 import { convert } from '../core/raindrops';
 describe('Raindrops', () => {
 	it('converts 1', () => expect(convert(1)).toEqual('1'));
-	xit('converts 3', () => expect(convert(3)).toEqual('Pling'));
+	it('converts 3', () => expect(convert(3)).toEqual('Pling'));
 	xit('converts 5', () => expect(convert(5)).toEqual('Plang'));
 	xit('converts 7', () => expect(convert(7)).toEqual('Plong'));
 	xit('converts 6', () => expect(convert(6)).toEqual('Pling'));
