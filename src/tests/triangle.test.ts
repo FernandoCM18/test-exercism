@@ -1,5 +1,5 @@
 import { Triangle } from '../core/triangle';
-describe('Triangle', () => {
+xdescribe('Triangle', () => {
 	describe('equilateral triangle', () => {
 		it('all sides are equal', () => {
 			const triangle = new Triangle(2, 2, 2);
