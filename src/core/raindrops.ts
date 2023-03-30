@@ -1,13 +1,15 @@
-export function convert(num: number): string {
-	if (num % 3 === 0) {
-		return 'Pling';
-	}
-	if (num % 5 === 0) {
-		return 'Plang';
-	}
+const RULES = new Map<string, number>();
+RULES.set('Pling', 3);
+RULES.set('Plang', 5);
+RULES.set('Plong', 7);
 
-	if (num % 7 === 0) {
-		return 'Plong';
-	}
-	return num.toString();
+export function convert(num: number): string {
+	let result = '';
+	RULES.forEach((factor, word) => {
+		if (num % factor === 0) {
+			result += word;
+		}
+	});
+
+	return result || num.toString();
 }
