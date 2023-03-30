@@ -6,7 +6,7 @@ describe('Acronym are produced from', () => {
 	it('other title cased phrases', () => {
 		expect(parse('Ruby on Rails')).toEqual('ROR');
 	});
-	xit('inconsistently cased phrases', () => {
+	it('inconsistently cased phrases', () => {
 		expect(parse('HyperText Markup Language')).toEqual('HTML');
 	});
 	xit('phrases with punctuation', () => {
