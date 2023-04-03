@@ -6,6 +6,7 @@ export class DiffieHellman {
 
   public getPublicKey(privateKey: number) {
     if (privateKey < 0) throw new Error();
+    if (privateKey === 0) throw new Error();
   }
 
   public getSecret(theirPublicKey: unknown, myPrivateKey: unknown): unknown {
