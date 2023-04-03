@@ -37,7 +37,7 @@ describe('Series', () => {
       [0, 4, 2, 4, 3],
     ]);
   });
-  xit('slice length is too large', () => {
+  it('slice length is too large', () => {
     expect(() => {
       new Series('12345').slices(6);
     }).toThrow(new Error('slice length cannot be greater than series length'));
