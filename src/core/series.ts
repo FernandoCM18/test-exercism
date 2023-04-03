@@ -2,15 +2,14 @@ export class Series {
   
   constructor(public series: string) {}
 
-  slices(sliceLength: number) {
-    const arrayNumbers: number[][] = [];
-    const arraySeries = Array.from(this.series);
-    const convertStrintoNumber = this.convertArrayStringToArrayNumber(arraySeries);
-    return arrayNumbers.concat([convertStrintoNumber]);
-  }
+  slices(sliceLength: number): number[][] {
+    const series: number[][] = [];
+    for (let i = 0; i <= this.series.length - sliceLength; i++) {
+      const sliced = this.series.slice(i, sliceLength + i);
+      series.push(Array.from(sliced.split(''), Number));
+    }
 
-  private convertArrayStringToArrayNumber(array: string[]): number[] {
-    return array.map((arr) => parseInt(arr));
+    return series;
   }
 
 }
