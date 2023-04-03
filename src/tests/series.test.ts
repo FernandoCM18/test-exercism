@@ -52,7 +52,7 @@ describe('Series', () => {
       new Series('12345').slices(0);
     }).toThrow(new Error('slice length cannot be zero'));
   });
-  xit('slice length cannot be negative', () => {
+  it('slice length cannot be negative', () => {
     expect(() => {
       new Series('123').slices(-1);
     }).toThrow(new Error('slice length cannot be negative'));
