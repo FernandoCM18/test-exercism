@@ -29,7 +29,7 @@ describe('diffie-hellman', () => {
         diffieHellman.getPublicKey(1);
       }).toThrow();
     });
-    xit('throws an error if private key equals the modulus parameter p', () => {
+    it('throws an error if private key equals the modulus parameter p', () => {
       expect(() => {
         diffieHellman.getPublicKey(p);
       }).toThrow();
