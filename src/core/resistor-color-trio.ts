@@ -52,26 +52,26 @@ enum UnitValue {
 }
 
 export const decodedResistorValue = ([color1, color2, color3]: string[]): string => {
-	const firstValue = bandColors.get(color1);
-	const secondValue = bandColors.get(color2);
-	const totalZeros = bandColors.get(color3) ?? 0;
-	// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-	const result = Number(`${firstValue}${secondValue}${'0'.repeat(totalZeros)}`);
+  const firstValue = bandColors.get(color1);
+  const secondValue = bandColors.get(color2);
+  const totalZeros = bandColors.get(color3) ?? 0;
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+  const result = Number(`${firstValue}${secondValue}${'0'.repeat(totalZeros)}`);
 
-	if (result >= UnitValue.GIGAOHMS) {
-		const resultGiga = (result / UnitValue.GIGAOHMS);
-		return `${resultGiga} ${Unit.GIGAOHMS}`;
-	}
+  if (result >= UnitValue.GIGAOHMS) {
+    const resultGiga = (result / UnitValue.GIGAOHMS);
+    return `${resultGiga} ${Unit.GIGAOHMS}`;
+  }
 
-	if (result >= UnitValue.MEGAOHMS) {
-		const resultMega = (result / UnitValue.MEGAOHMS);
-		return `${resultMega} ${Unit.MEGAOHMS}`;
-	}
+  if (result >= UnitValue.MEGAOHMS) {
+    const resultMega = (result / UnitValue.MEGAOHMS);
+    return `${resultMega} ${Unit.MEGAOHMS}`;
+  }
 
-	if (result >= UnitValue.KILOOHMS) {
-		const resultKilo = (result / UnitValue.KILOOHMS);
-		return `${resultKilo} ${Unit.KILOOHMS}`;
-	}
+  if (result >= UnitValue.KILOOHMS) {
+    const resultKilo = (result / UnitValue.KILOOHMS);
+    return `${resultKilo} ${Unit.KILOOHMS}`;
+  }
 
-	return `${result} ${Unit.OHMS}`;
+  return `${result} ${Unit.OHMS}`;
 };

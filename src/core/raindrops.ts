@@ -4,12 +4,12 @@ RULES.set('Plang', 5);
 RULES.set('Plong', 7);
 
 export function convert(num: number): string {
-	let result = '';
-	RULES.forEach((factor, word) => {
-		if (num % factor === 0) {
-			result += word;
-		}
-	});
+  let result = '';
+  RULES.forEach((factor, word) => {
+    if (num % factor === 0) {
+      result += word;
+    }
+  });
 
-	return result || num.toString();
+  return result || num.toString();
 }

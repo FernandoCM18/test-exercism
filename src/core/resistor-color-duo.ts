@@ -31,10 +31,10 @@ bandColors.set('grey', 8);
 bandColors.set('white', 9);
 
 export const decodedValue = ([color1, color2]: string[]) => {
-	const firstValue = bandColors.get(color1);
-	const secondValue = bandColors.get(color2);
-	// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-	const stringValue = `${firstValue}${secondValue}`;
+  const firstValue = bandColors.get(color1);
+  const secondValue = bandColors.get(color2);
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+  const stringValue = `${firstValue}${secondValue}`;
 
-	return Number(stringValue);
+  return Number(stringValue);
 };
