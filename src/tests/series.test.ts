@@ -57,7 +57,7 @@ describe('Series', () => {
       new Series('123').slices(-1);
     }).toThrow(new Error('slice length cannot be negative'));
   });
-  xit('empty series is invalid', () => {
+  it('empty series is invalid', () => {
     expect(() => {
       new Series('').slices(1);
     }).toThrow(new Error('series cannot be empty'));
