@@ -3,6 +3,9 @@ export class Series {
   constructor(public series: string) {}
 
   slices(sliceLength: number): number[][] {
+
+    if (sliceLength > this.series.length) throw new Error('slice length cannot be greater than series length');
+    
     const series: number[][] = [];
     for (let i = 0; i <= this.series.length - sliceLength; i++) {
       const sliced = this.series.slice(i, sliceLength + i);
