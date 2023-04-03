@@ -25,7 +25,7 @@ describe('Series', () => {
       [7, 7, 7],
     ]);
   });
-  xit('slices of long series', () => {
+  it('slices of long series', () => {
     expect(new Series('918493904243').slices(5)).toEqual([
       [9, 1, 8, 4, 9],
       [1, 8, 4, 9, 3],
