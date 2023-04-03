@@ -47,7 +47,7 @@ describe('Series', () => {
       new Series('12345').slices(42);
     }).toThrow(new Error('slice length cannot be greater than series length'));
   });
-  xit('slice length cannot be zero', () => {
+  it('slice length cannot be zero', () => {
     expect(() => {
       new Series('12345').slices(0);
     }).toThrow(new Error('slice length cannot be zero'));
