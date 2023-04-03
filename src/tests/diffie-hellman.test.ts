@@ -5,7 +5,7 @@ describe('diffie-hellman', () => {
       new DiffieHellman(0, 9999);
     }).toThrow();
   });
-  xit('throws an error if the constructor arguments are not prime', () => {
+  it('throws an error if the constructor arguments are not prime', () => {
     expect(() => {
       new DiffieHellman(10, 13);
     }).toThrow();

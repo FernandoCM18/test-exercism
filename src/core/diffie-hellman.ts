@@ -1,5 +1,6 @@
 export class DiffieHellman {
   constructor(p: number, g: number) {
+    if (p % 2 === 0 && g % 2 === 0) throw new Error('throws an error if the constructor arguments are not prime');
     if (g > p) throw new Error();
   }
 
