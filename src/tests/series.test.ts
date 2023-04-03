@@ -17,7 +17,7 @@ describe('Series', () => {
       [4, 2],
     ]);
   });
-  xit('slices can include duplicates', () => {
+  it('slices can include duplicates', () => {
     expect(new Series('777777').slices(3)).toEqual([
       [7, 7, 7],
       [7, 7, 7],
