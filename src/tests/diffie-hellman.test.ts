@@ -55,7 +55,7 @@ describe('diffie-hellman', () => {
       expect(diffieHellman.getPublicKey(bobPrivateKey)).toEqual(bobPublicKey);
     });
   });
-  xit('can calculate secret using other party\'s public key', () => {
+  it('can calculate secret using other party\'s public key', () => {
     expect(new DiffieHellman(23, 5).getSecret(19, 6)).toEqual(2);
   });
   xit('key exchange', () => {
