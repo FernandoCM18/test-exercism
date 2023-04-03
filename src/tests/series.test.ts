@@ -10,7 +10,7 @@ describe('Series', () => {
   it('slices of two', () => {
     expect(new Series('35').slices(2)).toEqual([[3, 5]]);
   });
-  xit('slices of two overlap', () => {
+  it('slices of two overlap', () => {
     expect(new Series('9142').slices(2)).toEqual([
       [9, 1],
       [1, 4],
