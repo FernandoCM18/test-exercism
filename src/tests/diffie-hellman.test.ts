@@ -46,7 +46,7 @@ describe('diffie-hellman', () => {
     const alicePublicKey = 8;
     const bobPrivateKey = 15;
     const bobPublicKey = 19;
-    xit('can calculate public key using private key', () => {
+    it('can calculate public key using private key', () => {
       expect(diffieHellman.getPublicKey(alicePrivateKey)).toEqual(
         alicePublicKey
       );
