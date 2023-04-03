@@ -13,8 +13,10 @@ export class DiffieHellman {
     return publicKey;
   }
 
-  public getSecret(theirPublicKey: unknown, myPrivateKey: unknown): unknown {
-    throw new Error('Remove this statement and implement this function');
+  public getSecret(theirPublicKey: number, myPrivateKey: number): number {
+    if (theirPublicKey < 0 || theirPublicKey >= this.p) throw new Error();
+    const secret = this.modPow(theirPublicKey, myPrivateKey, this.p);
+    return secret;
   }
 
   modPow(base: number, exponent: number, modulus: number): number {
