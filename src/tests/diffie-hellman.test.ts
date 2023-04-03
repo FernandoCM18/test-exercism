@@ -51,7 +51,7 @@ describe('diffie-hellman', () => {
         alicePublicKey
       );
     });
-    xit('can calculate public key when given a different private key', () => {
+    it('can calculate public key when given a different private key', () => {
       expect(diffieHellman.getPublicKey(bobPrivateKey)).toEqual(bobPublicKey);
     });
   });
