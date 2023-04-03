@@ -14,7 +14,7 @@ describe('diffie-hellman', () => {
     const p = 23;
     const g = 5;
     const diffieHellman = new DiffieHellman(p, g);
-    xit('throws an error if private key is negative', () => {
+    it('throws an error if private key is negative', () => {
       expect(() => {
         diffieHellman.getPublicKey(-1);
       }).toThrow();

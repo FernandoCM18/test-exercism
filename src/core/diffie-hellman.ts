@@ -4,8 +4,8 @@ export class DiffieHellman {
     if (g > p) throw new Error();
   }
 
-  public getPublicKey(privateKey: unknown): unknown {
-    throw new Error('Remove this statement and implement this function');
+  public getPublicKey(privateKey: number) {
+    if (privateKey < 0) throw new Error();
   }
 
   public getSecret(theirPublicKey: unknown, myPrivateKey: unknown): unknown {
