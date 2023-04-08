@@ -41,7 +41,7 @@ describe('Deficient numbers', () => {
     const expected = 'deficient';
     expect(classify(32)).toEqual(expected);
   });
-  xit('Large deficient number is classified correctly', () => {
+  it('Large deficient number is classified correctly', () => {
     const expected = 'deficient';
     expect(classify(33550337)).toEqual(expected);
   });
