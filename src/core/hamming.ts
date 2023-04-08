@@ -1,3 +1,3 @@
 export function compute(left: string, right: string) {
-  return null;
+  if (left.length === 0 && right.length === 0) return 0;
 }
