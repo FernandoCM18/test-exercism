@@ -45,7 +45,7 @@ describe('Deficient numbers', () => {
     const expected = 'deficient';
     expect(classify(33550337)).toEqual(expected);
   });
-  xit('Edge case (no factors other than itself) is classified correctly', () => {
+  it('Edge case (no factors other than itself) is classified correctly', () => {
     const expected = 'deficient';
     expect(classify(1)).toEqual(expected);
   });
