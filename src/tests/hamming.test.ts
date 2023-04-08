@@ -13,7 +13,7 @@ describe('Hamming', () => {
   it('long identical strands', () => {
     expect(compute('GGACTGAAATCTG', 'GGACTGAAATCTG')).toEqual(0);
   });
-  xit('long different strands', () => {
+  it('long different strands', () => {
     expect(compute('GGACGGATTCTG', 'AGGACGGATTCT')).toEqual(9);
   });
   xit('disallow first strand longer', () => {
