@@ -26,7 +26,7 @@ describe('Hamming', () => {
       compute('ATA', 'AGTG');
     }).toThrowError('DNA strands must be of equal length.');
   });
-  xit('disallow empty first strand', () => {
+  it('disallow empty first strand', () => {
     expect(() => {
       compute('', 'G');
     }).toThrowError('DNA strands must be of equal length.');
