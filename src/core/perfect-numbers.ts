@@ -4,24 +4,14 @@ enum Category {
   Deficient = 'deficient',
 }
 
-export function classify(num: number): string {
+export function classify(num: number): Category {
   if (num === 0) throw new Error('Classification is only possible for natural numbers.');
   if (num < 0) throw new Error('Classification is only possible for natural numbers.');
-  let category = '';
+
   const suma = aliquotSum(num);
-  if (suma === num) {
-    category = Category.Perfect;
-    return category;
-  }
-  if (suma > num) {
-    category = Category.Abundant;
-    return category;
-  }
-  if (suma < num) {
-    category = Category.Deficient;
-    return category;
-  }
-  return category;
+  if (suma === num) return Category.Perfect;
+  if (suma > num) return Category.Abundant;
+  return Category.Deficient;  
 }
 
 function aliquotSum(num: number) {
