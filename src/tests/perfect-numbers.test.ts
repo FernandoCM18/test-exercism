@@ -33,7 +33,7 @@ describe('Deficient numbers', () => {
     const expected = 'deficient';
     expect(classify(2)).toEqual(expected);
   });
-  xit('Smallest non-prime deficient number is classified correctly', () => {
+  it('Smallest non-prime deficient number is classified correctly', () => {
     const expected = 'deficient';
     expect(classify(4)).toEqual(expected);
   });
