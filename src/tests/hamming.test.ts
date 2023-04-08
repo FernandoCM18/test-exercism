@@ -21,7 +21,7 @@ describe('Hamming', () => {
       compute('AATG', 'AAA');
     }).toThrowError('DNA strands must be of equal length.');
   });
-  xit('disallow second strand longer', () => {
+  it('disallow second strand longer', () => {
     expect(() => {
       compute('ATA', 'AGTG');
     }).toThrowError('DNA strands must be of equal length.');
