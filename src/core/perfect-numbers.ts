@@ -5,10 +5,11 @@ enum Category {
 }
 
 export function classify(num: number): string {
+  const category = '';
   const suma = aliquotSum(num);
   if (suma === num) return Category.Perfect;
   if (suma > num) return Category.Abundant;
-  return '';
+  return category;
 }
 
 function aliquotSum(num: number) {
