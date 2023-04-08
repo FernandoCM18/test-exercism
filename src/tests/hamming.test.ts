@@ -31,7 +31,7 @@ describe('Hamming', () => {
       compute('', 'G');
     }).toThrowError('DNA strands must be of equal length.');
   });
-  xit('disallow empty second strand', () => {
+  it('disallow empty second strand', () => {
     expect(() => {
       compute('G', '');
     }).toThrowError('DNA strands must be of equal length.');
