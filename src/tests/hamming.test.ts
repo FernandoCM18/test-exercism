@@ -4,7 +4,7 @@ describe('Hamming', () => {
   it('empty strands', () => {
     expect(compute('', '')).toEqual(0);
   });
-  xit('single letter identical strands', () => {
+  it('single letter identical strands', () => {
     expect(compute('A', 'A')).toEqual(0);
   });
   xit('single letter different strands', () => {
