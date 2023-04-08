@@ -23,7 +23,7 @@ describe('Abundant numbers', () => {
     const expected = 'abundant';
     expect(classify(30)).toEqual(expected);
   });
-  xit('Large abundant number is classified correctly', () => {
+  it('Large abundant number is classified correctly', () => {
     const expected = 'abundant';
     expect(classify(33550335)).toEqual(expected);
   });
