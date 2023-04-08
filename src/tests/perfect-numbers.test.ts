@@ -15,7 +15,7 @@ describe('Perfect numbers', () => {
   });
 });
 describe('Abundant numbers', () => {
-  xit('Smallest abundant number is classified correctly', () => {
+  it('Smallest abundant number is classified correctly', () => {
     const expected = 'abundant';
     expect(classify(12)).toEqual(expected);
   });
