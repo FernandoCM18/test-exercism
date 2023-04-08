@@ -51,7 +51,7 @@ describe('Deficient numbers', () => {
   });
 });
 describe('Invalid inputs', () => {
-  xit('Zero is rejected (not a natural number)', () => {
+  it('Zero is rejected (not a natural number)', () => {
     expect(() => {
       classify(0);
     }).toThrowError('Classification is only possible for natural numbers.');
