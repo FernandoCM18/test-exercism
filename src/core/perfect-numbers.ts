@@ -6,8 +6,8 @@ enum Category {
 
 export function classify(num: number): string {
   const suma = aliquotSum(num);
-
   if (suma === num) return Category.Perfect;
+  if (suma > num) return Category.Abundant;
   return '';
 }
 
