@@ -5,7 +5,7 @@ describe('Perfect numbers', () => {
     const expected = 'perfect';
     expect(classify(6)).toEqual(expected);
   });
-  xit('Medium perfect number is classified correctly', () => {
+  it('Medium perfect number is classified correctly', () => {
     const expected = 'perfect';
     expect(classify(28)).toEqual(expected);
   });
