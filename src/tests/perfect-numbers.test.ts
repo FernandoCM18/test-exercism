@@ -19,7 +19,7 @@ describe('Abundant numbers', () => {
     const expected = 'abundant';
     expect(classify(12)).toEqual(expected);
   });
-  xit('Medium abundant number is classified correctly', () => {
+  it('Medium abundant number is classified correctly', () => {
     const expected = 'abundant';
     expect(classify(30)).toEqual(expected);
   });
