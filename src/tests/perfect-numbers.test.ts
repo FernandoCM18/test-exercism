@@ -9,7 +9,7 @@ describe('Perfect numbers', () => {
     const expected = 'perfect';
     expect(classify(28)).toEqual(expected);
   });
-  xit('Large perfect number is classified correctly', () => {
+  it('Large perfect number is classified correctly', () => {
     const expected = 'perfect';
     expect(classify(33550336)).toEqual(expected);
   });
