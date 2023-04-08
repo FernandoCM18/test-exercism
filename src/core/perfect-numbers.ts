@@ -5,11 +5,21 @@ enum Category {
 }
 
 export function classify(num: number): string {
-  const category = '';
+  if (num === 0) throw new Error('Classification is only possible for natural numbers.');
+  let category = '';
   const suma = aliquotSum(num);
-  if (suma === num) return Category.Perfect;
-  if (suma > num) return Category.Abundant;
-  if (suma < num) return Category.Deficient;
+  if (suma === num) {
+    category = Category.Perfect;
+    return category;
+  }
+  if (suma > num) {
+    category = Category.Abundant;
+    return category;
+  }
+  if (suma < num) {
+    category = Category.Deficient;
+    return category;
+  }
   return category;
 }
 
