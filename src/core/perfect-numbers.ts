@@ -6,6 +6,7 @@ enum Category {
 
 export function classify(num: number): string {
   if (num === 0) throw new Error('Classification is only possible for natural numbers.');
+  if (num < 0) throw new Error('Classification is only possible for natural numbers.');
   let category = '';
   const suma = aliquotSum(num);
   if (suma === num) {
