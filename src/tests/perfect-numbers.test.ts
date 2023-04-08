@@ -37,7 +37,7 @@ describe('Deficient numbers', () => {
     const expected = 'deficient';
     expect(classify(4)).toEqual(expected);
   });
-  xit('Medium deficient number is classified correctly', () => {
+  it('Medium deficient number is classified correctly', () => {
     const expected = 'deficient';
     expect(classify(32)).toEqual(expected);
   });
