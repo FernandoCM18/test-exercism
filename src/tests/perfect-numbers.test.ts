@@ -29,7 +29,7 @@ describe('Abundant numbers', () => {
   });
 });
 describe('Deficient numbers', () => {
-  xit('Smallest prime deficient number is classified correctly', () => {
+  it('Smallest prime deficient number is classified correctly', () => {
     const expected = 'deficient';
     expect(classify(2)).toEqual(expected);
   });
