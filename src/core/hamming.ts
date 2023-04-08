@@ -1,5 +1,8 @@
 export function compute(left: string, right: string): number {
-  if (left.length === 0 && right.length === 0 || left === right) return 0;  
-  if (left !== right) return 1;
-  return 0;
+  let counter = 0;
+  for(let i = 0; i < left.length; i++) {
+    if (left[i] !== right[i]) counter++;
+  }
+  
+  return counter;
 }
