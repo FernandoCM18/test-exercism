@@ -7,7 +7,7 @@ describe('Darts', () => {
   it('On the outer circle', () => {
     expect(score(0, 10)).toEqual(1);
   });
-  xit('On the middle circle', () => {
+  it('On the middle circle', () => {
     expect(score(-5, 0)).toEqual(5);
   });
   xit('On the inner circle', () => {
