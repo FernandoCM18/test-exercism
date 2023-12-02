@@ -1,5 +1,3 @@
-Aquí tienes algunas sugerencias para mejorar el texto:
-
 # Este proyecto resuelve los problemas de la web de Exercism
 
 ## Instrucciones de uso:
