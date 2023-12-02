@@ -37,7 +37,7 @@ describe('Darts', () => {
   it('Just outside the outer circle', () => {
     expect(score(7.1, -7.1)).toEqual(0);
   });
-  xit('Asymmetric position between the inner and middle circles', () => {
+  it('Asymmetric position between the inner and middle circles', () => {
     expect(score(0.5, -4)).toEqual(5);
   });
 });
