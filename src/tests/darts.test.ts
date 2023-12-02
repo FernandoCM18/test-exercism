@@ -4,7 +4,7 @@ describe('Darts', () => {
   it('Missed target', () => {
     expect(score(-9, 9)).toEqual(0);
   });
-  xit('On the outer circle', () => {
+  it('On the outer circle', () => {
     expect(score(0, 10)).toEqual(1);
   });
   xit('On the middle circle', () => {
