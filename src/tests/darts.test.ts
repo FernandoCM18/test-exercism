@@ -1,4 +1,4 @@
-import { score } from '../core/darts';
+import { score } from '../core/darts/darts';
 
 describe('Darts', () => {
   it('Missed target', () => {
