@@ -16,7 +16,7 @@ describe('Darts', () => {
   it('Exactly on centre', () => {
     expect(score(0, 0)).toEqual(10);
   });
-  xit('Near the centre', () => {
+  it('Near the centre', () => {
     expect(score(-0.1, -0.1)).toEqual(10);
   });
   xit('Just within the inner circle', () => {
